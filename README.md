@@ -14,7 +14,7 @@ the Helm chart should be stored in a Nexus private Nexus server.
 
 # Steps
 ## 1 Create Git repo
-TBD
+Spoiler: [Create Git Repo](solutions/create_git_repo.md)
 
 ## 2 Create Nexus Helm repo
 TBD
