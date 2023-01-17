@@ -32,13 +32,17 @@ devops-lab-<username>/
 Spoiler: [Create Git Repo](solutions/create_git_repo.md)
 
 ## 2 Create Nexus Helm repo
-Spoiler: [Create Git Repo](solutions/create_nexus_repo.md)
+
+Spoiler: [Create Nexus Helm repo](solutions/create_nexus_repo.md)
 
 ## 3 Create Helm chart
-Spoiler: [Create Git Repo](solutions/create_helm_chart.md)
+
+Spoiler: [Create Helm chart](solutions/create_helm_chart.md)
 
 ## 4 Create Ansible playbook
-Spoiler: [Create Git Repo](solutions/create_ansible_playbook.md)
+
+Spoiler: [Create Ansible playbook](solutions/create_ansible_playbook.md)
 
 ## 5 Deploy Helm chart with Ansible
-Spoiler: [Create Git Repo](solutions/deploy_helm_chart_with_ansible.md)
+
+Spoiler: [Deploy Helm chart with Ansible](solutions/deploy_helm_chart_with_ansible.md)
