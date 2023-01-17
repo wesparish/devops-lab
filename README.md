@@ -17,13 +17,13 @@ the Helm chart should be stored in a Nexus private Nexus server.
 Spoiler: [Create Git Repo](solutions/create_git_repo.md)
 
 ## 2 Create Nexus Helm repo
-TBD
+Spoiler: [Create Git Repo](solutions/create_nexus_repo.md)
 
 ## 3 Create Helm chart
-TBD
+Spoiler: [Create Git Repo](solutions/create_helm_chart.md)
 
 ## 4 Create Ansible playbook
-TBD
+Spoiler: [Create Git Repo](solutions/create_ansible_playbook.md)
 
 ## 5 Deploy Helm chart with Ansible
-TBD
+Spoiler: [Create Git Repo](solutions/deploy_helm_chart_with_ansible.md)
