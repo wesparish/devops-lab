@@ -66,9 +66,10 @@ Create an ansible playbook to perform the deployment of the new Helm chart.
 Notes:
 * Helm chart should be installed from a Nexus URL, not a local subdirectory
 * Recommend using the kubernetes.core.helm module (https://docs.ansible.com/ansible/latest/collections/kubernetes/core/helm_module.html)
-* Recommend allowing the kubernetes.core.helm module to use ~/.kube/config
-credentials for access
+* Recommend allowing the kubernetes.core.helm module to use `~/.kube/config
+credentials for access`
 * No values.yaml overrides are necessary for this lab
+* Recommend naming ansible-playbook `helm-deployment-playbook`
 
 Spoiler: [Create Ansible playbook](solutions/create_ansible_playbook.md)
 
