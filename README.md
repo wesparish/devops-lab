@@ -5,6 +5,7 @@ This lab is indended to be a challenge to implement the following technologies:
    - Helm
    - Git
    - Nexus
+   - K8s
 
 # Summary
 Using Ansible, deploy an example Helm chart from a private nexus server that
