@@ -15,6 +15,20 @@ the Helm chart should be stored in a private Nexus server.
 
 # Steps
 ## 1 Create Git repo
+Create a new git repo name `devops-lab-<username>` to store your solution in.
+The solution should be organized in this directory so it easily understable by
+others. This is important in the industry as multiple team members will likely
+be working with code that you write.
+
+Recommended directory layout:
+```
+devops-lab-<username>/
+   helm-charts/
+      nginx-demo/
+   ansible-playbooks/
+      helm-deployment-playbook/
+```
+
 Spoiler: [Create Git Repo](solutions/create_git_repo.md)
 
 ## 2 Create Nexus Helm repo
