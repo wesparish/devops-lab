@@ -11,7 +11,7 @@ This lab is indended to be a challenge to implement the following technologies:
 Using Ansible, deploy an example Helm chart from a private nexus server that
 runs a single nginx web server pod with a NodePort to K8s. The entire
 solution should be committed and pushed to a git repository on Github and
-the Helm chart should be stored in a Nexus private Nexus server.
+the Helm chart should be stored in a private Nexus server.
 
 # Steps
 ## 1 Create Git repo
