@@ -14,6 +14,10 @@ runs a single nginx web server pod with a NodePort to the K8s namespace
 repository on Github and the Helm chart should be stored in a private Nexus
 server.
 
+**Note: The `solutions` subdirectory has examples of commands I used to
+accomplish these goals. You should attempt to do this yourself before
+looking at the solutions.**
+
 # Steps
 ## 1 Create Git repo
 Create a new git repo name `devops-lab-<username>` to store your solution in.
