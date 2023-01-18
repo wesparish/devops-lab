@@ -1,5 +1,5 @@
 # Create Git repo
-1. Browse to github.com and login
+1. Browse to https://github.com and login
 2. From the top-right, click your user icon, then select `Your repositories`
 3. Click the green `New` button to create a new repository
 4. Name the repository `devops-lab-<username>` and click the
