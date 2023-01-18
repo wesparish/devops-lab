@@ -42,14 +42,16 @@ Ensure you commit/push all changes to Github.
 
 Spoiler: [Create Git Repo](solutions/create_git_repo.md)
 
-## 2 Create Nexus Helm repo
+## 2 Create Helm and Docker Nexus repositories
 Using the Nexus web UI, create a new Helm3 repository. The Helm chart created
 in this lab will be pushed to this new Helm3 Nexus repo.
 
 Ansible will also deploy the Helm chart from Nexus (rather than the local
 filesystem).
 
-Spoiler: [Create Nexus Helm repo](solutions/create_nexus_repo.md)
+Also create a Docker repository for use later in the lab.
+
+Spoiler: [Create Nexus Helm and Docker repos](solutions/create_nexus_repo.md)
 
 ## 3 Create Helm chart
 Create the Helm chart (Helm3) locally in the git repo from step 1.

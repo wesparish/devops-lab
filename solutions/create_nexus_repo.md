@@ -1,4 +1,4 @@
-# Create Nexus repo
+# Create Nexus Helm and Docker repos
 1. Browse to nexus server web UI
 2. Click `Sign In` in the top-right corner and enter administrator credentials
 3. Click the cog in the top-center navbar to browse to the admin screen
