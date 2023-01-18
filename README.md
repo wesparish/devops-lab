@@ -6,13 +6,15 @@ This lab is indended to be a challenge to implement the following technologies:
    - Git
    - Nexus
    - K8s
+   - Docker
 
 # Summary
 Using Ansible, deploy an example Helm chart from a private nexus server that
 runs a single nginx web server pod with a NodePort to the K8s namespace
 `nginx-demo`. The entire solution should be committed and pushed to a git
 repository on Github and the Helm chart should be stored in a private Nexus
-server.
+server. Once running, upgrade your deployed Nginx instance to a custom Docker
+image to override the default HTML start page with a custom "Hello World" page.
 
 **Note: The `solutions` subdirectory has examples of commands I used to
 accomplish these goals. You should attempt to do this yourself before
@@ -32,6 +34,8 @@ devops-lab-<username>/
       nginx-demo/
    ansible-playbooks/
       helm-deployment-playbook/
+   docker-images/
+      nginx-hello-world/
 ```
 
 Ensure you commit/push all changes to Github.
@@ -90,3 +94,23 @@ kubernetes.core.helm module. Add an Ansible arg to select either `present` or
 `absent` to control whether the Helm chart should be deployed or not.
 
 Spoiler: [Deploy Helm chart with Ansible](solutions/deploy_helm_chart_with_ansible.md)
+
+## 6 Create a custom Nginx Docker image
+Create a custom Docker image (Dockerfile + static HTML content file),
+controlled in your Git repo, that is `FROM nginx:latest` and overrides the
+default HTML page that ships with Nginx to be a custom "Hello World" page.
+
+Publish this new Docker image to your Nexus server in a Docker repo.
+
+Notes:
+  * Recommend storing the Docker image code in
+    `docker-images/nginx-hello-world/`
+
+Spoiler: [Create a custom Nginx Docker image](solutions/create_custom_nginx_docker_image.md)
+
+## 7 Devops Workflow
+Update your Helm chart to pin this new custom `nginx-hello-world` instead of
+`nginx:latest`, and publish to youre Nexus Helm repo.
+
+Using your Ansible playbook, update your Helm release with the new Helm chart
+changes to upgrade your Nginx deployment to the new custom Docker image.
