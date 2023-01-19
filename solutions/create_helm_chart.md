@@ -73,3 +73,10 @@ git add .
 git commit -m "Changing Helm chart service type to NodePort"
 git push origin main
 ```
+
+8. Push built Helm chart to Nexus
+```
+helm repo list
+helm plugin install https://github.com/chartmuseum/helm-push
+helm cm-push . helm-$USER --context-path=/repository/helm-$USER/
+```
