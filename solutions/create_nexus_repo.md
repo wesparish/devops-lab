@@ -13,9 +13,9 @@
       * Scroll down and click `Create repository` button at the bottom
 7. Add helm repo locally
 ```
-HELM_USER=changeme
-HELM_PASSWORD=changeme
-HELM_REPO_URL=http://nexus-url.com/changeme/
-helm repo add helm-$USER ${HELM_REPO_URL} --username $HELM_USER --password $HELM_PASSWORD
-helm repo update
+$ HELM_USER=changeme
+$ HELM_PASSWORD=changeme
+$ HELM_REPO_URL=http://nexus-url.com/changeme/
+$ helm repo add helm-$USER ${HELM_REPO_URL} --username $HELM_USER --password $HELM_PASSWORD
+$ helm repo update
 ```
